@@ -1,22 +1,32 @@
 #include <stdio.h>
 
-const int MAX = 4;
+double getAvg(int num[], int size);
 
-int main ()
+int main()
 {
-    char *names[] = {
-            "Zara Ali",
-            "Hina Ali",
-            "Nuha Ali",
-            "Sara Ali",
-    };
-    int  var[] = {10, 100, 200};
-    int i = 0;
+    int num[5] = {5, 2, 1, 3, 4};
 
-    for ( i = 0; i < MAX; i++)
-    {
-        printf("Value of names[%d] = %s\n", i, names[i] );
-        printf("Value of var[%d] = %d\n", i, var[i] );
-    }
+    double avg, avg2, avg3;
+
+    avg = getAvg(num, 5);
+    avg2 = getAvg2(num, 5);
+    avg3 = getAvg3(num, 5);
+
+    printf("平均值是： %f ", avg);
+
     return 0;
+}
+
+double getAvg(int num[], int size)
+{
+    double avg;
+    double sum;
+
+    for (int i = 0; i < size; ++i) {
+        sum += num[i];
+    }
+    printf( "是： %f ", sum );
+    avg =  sum / size;
+
+    return avg;
 }
