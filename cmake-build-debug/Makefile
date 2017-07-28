@@ -123,6 +123,33 @@ c/fast:
 	$(MAKE) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/build
 .PHONY : c/fast
 
+headers/hotal.o: headers/hotal.c.o
+
+.PHONY : headers/hotal.o
+
+# target to build an object file
+headers/hotal.c.o:
+	$(MAKE) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/headers/hotal.c.o
+.PHONY : headers/hotal.c.o
+
+headers/hotal.i: headers/hotal.c.i
+
+.PHONY : headers/hotal.i
+
+# target to preprocess a source file
+headers/hotal.c.i:
+	$(MAKE) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/headers/hotal.c.i
+.PHONY : headers/hotal.c.i
+
+headers/hotal.s: headers/hotal.c.s
+
+.PHONY : headers/hotal.s
+
+# target to generate assembly for a file
+headers/hotal.c.s:
+	$(MAKE) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/headers/hotal.c.s
+.PHONY : headers/hotal.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... c"
+	@echo "... headers/hotal.o"
+	@echo "... headers/hotal.i"
+	@echo "... headers/hotal.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

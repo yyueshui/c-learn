@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/yuanyueshui/workspace/c/headers/hotal.c">
+			<Option target="c"/>
+		</Unit>
+		<Unit filename="/Users/yuanyueshui/workspace/c/headers/hotal.h">
+			<Option target="c"/>
+		</Unit>
 		<Unit filename="/Users/yuanyueshui/workspace/c/main.c">
 			<Option target="c"/>
 		</Unit>
