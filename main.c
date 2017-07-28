@@ -9,8 +9,6 @@ int main()
     double avg, avg2, avg3;
 
     avg = getAvg(num, 5);
-    avg2 = getAvg2(num, 5);
-    avg3 = getAvg3(num, 5);
 
     printf("平均值是： %f ", avg);
 
