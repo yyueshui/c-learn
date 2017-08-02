@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,15 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/yuanyueshui/workspace/c/headers/hotal.c
-stdio.h
--
-hotal.h
-/Users/yuanyueshui/workspace/c/headers/hotal.h
-
-/Users/yuanyueshui/workspace/c/headers/hotal.h
-
 /Users/yuanyueshui/workspace/c/main.c
 stdio.h
+-
+
+/Users/yuanyueshui/workspace/c/struct/hero.c
+hero.h
+/Users/yuanyueshui/workspace/c/struct/hero.h
+
+/Users/yuanyueshui/workspace/c/struct/hero.h
+stdio.h
+-
+stdlib.h
 -
 

@@ -3,5 +3,5 @@ project(c)
 
 set(CMAKE_C_STANDARD 99)
 
-set(SOURCE_FILES main.c headers/hotal.h headers/hotal.c)
+set(SOURCE_FILES main.c struct/hero.h struct/hero.c)
 add_executable(c ${SOURCE_FILES})
