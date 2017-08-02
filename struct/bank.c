@@ -24,6 +24,7 @@ int main()
     return 0;
 }
 
+//void modify(const Bank *bank) 使用const bank里面的属性不允许被修改
 void modify(Bank *bank)
 {
     (*bank).userName = "李四";
